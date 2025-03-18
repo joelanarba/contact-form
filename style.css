@@ -28,10 +28,10 @@ body {
     justify-content: center;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
 }
 
-.contact-form{
+#contact-form{
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -46,7 +46,7 @@ h2{
 .form-group{
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     line-height: 2;
     color: hsl(186, 15%, 59%);
 }
@@ -56,6 +56,21 @@ h2{
     border-radius: 5px;
     border: 1px solid hsl(186, 15%, 59%);
     height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: hsl(186, 15%, 59%);
+    font-weight: 600;
+}
+
+.form-group input:hover{
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+.form-group input:focus,
+.form-group input:active {
+    border: 1px solid hsl(169, 82%, 27%) ;
+    box-shadow: 0 0 5px hsl(169, 82%, 27%);
+    outline: none;
 }
 
 fieldset{
@@ -64,6 +79,7 @@ fieldset{
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-size: 16px;
 }
 
 fieldset label{
@@ -79,9 +95,30 @@ fieldset label{
     margin-bottom: 10px;
 }
 
+fieldset label:hover{
+    cursor: pointer;
+}
+
+fieldset label:focus,
+fieldset label:active {
+    border: 1px solid hsl(169, 82%, 27%) ;
+    
+    
+    
+}
+
+
 fieldset label input[type="radio"]{
     margin-right: 10px;
+
 }
+
+fieldset label:has(input[type="radio"]:checked) {
+    background-color: hsl(166, 44%, 86%);
+    border-color: hsl(169, 82%, 27%);
+    accent-color: hsl(169, 82%, 27%);;
+}
+
 
 legend{
     color: hsl(186, 15%, 59%);
@@ -101,6 +138,16 @@ legend{
     border-radius: 5px;
     border: 1px solid hsl(186, 15%, 59%);
     height: 250px;
+    resize: none;
+    font-size: 16px;
+    color: hsl(186, 15%, 59%);
+    font-weight: 600;
+}
+
+.text textarea:focus,
+.text textarea:active {
+    border: 1px solid hsl(186, 15%, 59%); 
+    outline: none;
 }
 
 .checkbox {
@@ -120,6 +167,80 @@ button{
     font-weight: 600;
     border: none;
     width: 100%;
+    cursor: pointer;
 }
 
+button:hover{
+    background-color: hsl(169, 73%, 17%);
+}
 
+@media (min-width: 768px) {
+    .container{
+        width: 60%;
+        margin: 50px auto;
+    }
+
+    h2{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    #contact-form{
+        width: 100%;
+    }
+
+    .form-group{
+        margin-bottom: 20px;
+    }
+
+    .form-group input{
+        height: 50px;
+        width: 100%;
+    }
+
+    .double{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .double .form-group {
+        flex: 1;
+    }
+
+    fieldset{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+        flex: 1;
+        line-height: 2;
+    }
+
+    fieldset label{
+        flex: 1;
+        height: 50px;
+    }
+
+    .text{
+        line-height: 2;
+    }
+
+    .text textarea{
+        height: 100px;
+
+    }
+
+    .checkbox {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    button{
+        height: 50px;
+    }
+
+
+
+}
