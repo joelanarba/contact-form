@@ -1,12 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Karla", sans-serif;
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: hsl(148, 38%, 91%);
+  font-size: 16px;
+  padding: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 24px;
+    color: hsl(187, 24%, 22%);
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    line-height: 2;
+    color: hsl(186, 15%, 59%);
+}
+
+.form-group input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid hsl(186, 15%, 59%);
+    height: 40px;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset label{
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: hsl(186, 15%, 59%);
+    border: 1px solid hsl(186, 15%, 59%);
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+fieldset label input[type="radio"]{
+    margin-right: 10px;
+}
+
+legend{
+    color: hsl(186, 15%, 59%);
+    margin-bottom: 10px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    color: hsl(186, 15%, 59%);
+    margin-bottom: 20px;
+}
+
+.text textarea{
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid hsl(186, 15%, 59%);
+    height: 250px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: hsl(186, 15%, 59%);
+    margin-bottom: 20px;
+}
+
+button{
+    border-radius: 5px;
+    height: 40px;
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    border: none;
+    width: 100%;
+}
+
+

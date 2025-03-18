@@ -1,80 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Contact form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Contact Us</h1>
-    <form action="">
-      <div class="form-group">
-        <label for="firstName">First Name *</label>
-        <input type="text" id="firstName" name="firstName" required>
-        <!-- <p class="error-message">This field is required</p> -->
+    <title>Frontend Mentor | Contact form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="contact-form">
+        <h2>Contact Us</h2>
+        <div class="form-group">
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" name="last-name" required />
       </div>
 
-      <div class="form-group">
-        <label for="lastName">Last Name *</label>
-        <input type="text" id="lastName" name="lastName" required>
-        <!-- <p class="error-message">This field is required</p> -->
-      </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
 
-      <div class="form-group">
-        <label for="email">Email Address *</label>
-        <input type="email" id="email" name="email" required>
-        <!-- <p class="error-message">Please enter a valid email address</p> -->
-      </div>
+        <fieldset>
+          <legend>Query Type *</legend>
+          <label>
+            <input
+              type="radio"
+              name="query-type"
+              value="general-enquiry"
+              required
+            />
+            General Enquiry
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="query-type"
+              value="support-request"
+              required
+            />
+            Support Request
+          </label>
+        </fieldset>
+        
+        <div class="text">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
 
-      <div class="form-group">
-        <label for="queryType">Query Type *</label>
-        <input type="radio" name="queryType" id="queryType">
-        <!-- <select id="queryType" name="queryType" required>
-          <option value="">Please select a query type</option>
-          <option value="generalEnquiry">General Enquiry</option>
-          <option value="supportRequest">Support Request</option>
-        </select> -->
-        <!-- <p class="error-message">Please select a query type</p> -->
-      </div>
-    </form>
-  </header>
+        
+          <label class="checkbox">
+            <div>
+            <input type="checkbox" id="consent" name="consent" required />
+            </div>
+            I consent to being contacted by the team *
+          </label>
+        
 
+        <button type="submit">Submit</button>
+      </form>
+    </div>
 
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/joelanarba">Amuni Anarba Joel</a>.
+    </div>
+  </body>
 </html>
