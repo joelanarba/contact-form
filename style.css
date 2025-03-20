@@ -187,6 +187,14 @@ button:hover{
     background-color: hsl(169, 73%, 17%);
 }
 
+.error {
+    color: red;
+    font-size: 14px;
+  }
+  
+.error-border {
+    border: 1px solid red !important;
+  }
 @media (min-width: 768px) {
     .container{
         width: 60%;
